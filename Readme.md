@@ -50,6 +50,6 @@ Normal Log In to [DEMO](https://alexandereric995.github.io/window-biometric-log/
  
 MCMC [DEMO](https://alexandereric995.github.io/window-biometric-log/mcmc.html)
 
-KWSP [DEMO](https://alexandereric995.github.io/window-biometric-log/mcmc.html)
+KWSP [DEMO](https://alexandereric995.github.io/window-biometric-log/kwsp.html)
 
    	
