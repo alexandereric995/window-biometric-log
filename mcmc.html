@@ -1042,21 +1042,6 @@
 </head>
 
 <body translate="no" >
-  <script>
-        var isNS = (navigator.appName == "Netscape") ? 1 : 0;
-        if (navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN || Event.MOUSEUP);
-        function mischandler() {
-            return false;
-        }
-        function mousehandler(e) {
-            var myevent = (isNS) ? e : event;
-            var eventbutton = (isNS) ? myevent.which : myevent.button;
-            if ((eventbutton == 2) || (eventbutton == 3)) return false;
-        }
-        document.oncontextmenu = mischandler;
-        document.onmousedown = mousehandler;
-        document.onmouseup = mousehandler;
-    </script>
   <div class="mcmc">
   <div class="mcmc_screen mcmc_screen--clickable">
     <div class="mcmc__top-bullets">
@@ -1206,12 +1191,12 @@
   </div>
   <div title="mosti" class="mcmc__twitter mcmc__button">
     <a href="https://twitter.com/officialmosti" target="_blank">
-      <i class="fa fa-twitter"></i>
+      <i class="fa fa-mcmc"></i>
     </a>
     </div>
   <div title="MKN" class="mcmc__original mcmc__button">
     <a href="https://twitter.com/MKNJPM" target="_blank">
-      <i class="fa fa-dribbble"></i>
+      <i class="fa fa-mcmc"></i>
     </a>
     </div>
   </div>  
