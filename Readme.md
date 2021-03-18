@@ -1,4 +1,4 @@
-# MALAYSIA SATELLITE 001
+# WINDOW BIOMETRIC LOG
 
     L I C E N S E
     Version 2.0, xx February 2021
@@ -15,7 +15,7 @@
 
     
 
-# WINDOW BIOMETRIC LOG
+# APENDIX
 
     APPENDIX: How to apply the Non-Halal Certificate License to your build.
    
