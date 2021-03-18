@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="my-en" >
 <head>
 <meta charset="UTF-8">
 <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Jata_MalaysiaV2.svg/1200px-Jata_MalaysiaV2.svg.png" />
@@ -813,13 +813,13 @@
   transform: translate3d(37.95px, 57.75px, 0);
   opacity: 0;
 }
-.mcmc__value-currency {
+.mcmc__value-xtext {
   display: flex;
   align-items: center;
   width: 28.05px;
   line-height: 42.9px;
 }
-.mcmc__value-digit {
+.mcmc__xval {
   width: 24.75px;
   display: flex;
   line-height: 42.9px;
@@ -827,47 +827,47 @@
   justify-content: center;
   align-items: center;
 }
-.mcmc__value-digit:nth-child(3) {
+.mcmc__xval:nth-child(3) {
   margin-right: 8.25px;
 }
-.mcmc__value-digit:nth-child(2) {
+.mcmc__xval:nth-child(2) {
   transition: transform 0.4s ease;
   transition-delay: 0.3s;
   transform: translate3d(0, -343.2px, 0);
 }
-.mcmc__value-digit--visible:nth-child(2) {
+.mcmc__xval--visible:nth-child(2) {
   transform: none;
 }
-.mcmc__value-digit:nth-child(3) {
+.mcmc__xval:nth-child(3) {
   transition: transform 0.5s ease;
   transition-delay: 0.3s;
   transform: translate3d(0, -343.2px, 0);
 }
-.mcmc__value-digit--visible:nth-child(3) {
+.mcmc__xval--visible:nth-child(3) {
   transform: none;
 }
-.mcmc__value-digit:nth-child(4) {
+.mcmc__xval:nth-child(4) {
   transition: transform 0.6s ease;
   transition-delay: 0.3s;
   transform: translate3d(0, -343.2px, 0);
 }
-.mcmc__value-digit--visible:nth-child(4) {
+.mcmc__xval--visible:nth-child(4) {
   transform: none;
 }
-.mcmc__value-digit:nth-child(5) {
+.mcmc__xval:nth-child(5) {
   transition: transform 0.7s ease;
   transition-delay: 0.3s;
   transform: translate3d(0, -343.2px, 0);
 }
-.mcmc__value-digit--visible:nth-child(5) {
+.mcmc__xval--visible:nth-child(5) {
   transform: none;
 }
-.mcmc__value-digit:nth-child(6) {
+.mcmc__xval:nth-child(6) {
   transition: transform 0.8s ease;
   transition-delay: 0.3s;
   transform: translate3d(0, -343.2px, 0);
 }
-.mcmc__value-digit--visible:nth-child(6) {
+.mcmc__xval--visible:nth-child(6) {
   transform: none;
 }
 .mcmc__under-curve {
@@ -1042,6 +1042,21 @@
 </head>
 
 <body translate="no" >
+   <script>
+var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+function mischandler(){
+return false;
+}
+function mousehandler(e){
+var myevent = (isNS) ? e : event;
+var eventbutton = (isNS) ? myevent.which : myevent.button;
+if((eventbutton==2)||(eventbutton==3)) return false;
+}
+document.oncontextmenu = mischandler;
+document.onmousedown = mousehandler;
+document.onmouseup = mousehandler;
+</script>
   <div class="mcmc">
   <div class="mcmc_screen mcmc_screen--clickable">
     <div class="mcmc__top-bullets">
@@ -1112,18 +1127,20 @@
       <div class="mcmc__value-particle"></div>
     </div>
     <div class="mcmc__value">
-      <div class="mcmc__value-currency">SUCCES!</div>
-      <div class="mcmc__value-digit">
+     
+      <div class="mcmc__xval">
       </div>
-      <div class="mcmc__value-digit">
+      <div class="mcmc__xval">
       </div>
-      <div class="mcmc__value-digit">
+      <div class="mcmc__xval">
       </div>
-      <div class="mcmc__value-digit">
+      <div class="mcmc__xval">
       </div>
-      <div class="mcmc__value-digit">  
+      <div class="mcmc__xval">  
       </div>
     </div>
+ <div class="mcmc__value-xtext">SUCCES!</div>
+
     <svg class="mcmc__fprint" viewBox="0 0 180 320">
       <defs>
         <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -1165,7 +1182,8 @@
       <path class="mcmc__ending-path mcmc__ending-path--purplish"d="M114.8,239.4c-2.7,6.1-8.3,12.8-7.8,19.8c0.3,4.6,3.8,7.4,7.8,9.1c8.9,3.8,19.7,0.4,28.6-1.3c8.8-1.7,19.7-3.2,23.7,6.7c2.8,6.8,6.1,14.7,4.4,22.2"/>
       <path class="mcmc__ending-path mcmc__ending-path--pinkish"d="M129.9,224.2c-0.4,7.5-3.1,18,0.7,25c2.8,5.1,14.3,6.3,19.5,7.4c3.7,0.7,8.7,2.2,12-0.5c6.7-5.4,11.1-13.7,14.1-21.6c3.1-8-4.4-12.8-11.1-14.5c-5-1.3-19.1-0.7-21-6.7c-0.9-2.8,1.8-5.9,3.4-7.9"/>
       <path class="mcmc__under-curve" d="M0,140.2c13.1-10.5,34.7-17,48.5-4.1c5.5,5.2,7.6,12.1,9.2,19.2c2.4,10.5,4.3,21,7.2,31.4c2.4,8.6,4.3,19.6,10.4,26.7c4.3,5,17.7,13.4,23.1,4.8c5.9-9.4,6.8-22.5,9.7-33c4.9-17.8,13-14.6,15.7-14.6c1.8,0,9,2.3,15.4,5.4c6.2,3,11.9,7.7,17.9,11.2c7,4.1,16.5,9.2,23.8,6.6l0,125.5l-181,0l0,-179.8"/>
-    </svg>
+    
+</svg>
     <div class="mcmc__bullet"></div>
     <div class="mcmc__member"> MY WINDOW </div>
     <div class="mcmc__dates">
@@ -1198,6 +1216,13 @@
     <a href="https://twitter.com/MKNJPM" target="_blank">
       <i class="fa fa-mcmc"></i>
     </a>
+<script type="text/javascript">
+  var u = new SpeechSynthesisUtterance();
+  u.text = 'Selamat Datang! Saya adalah Spectre! Sila Scan biometric jari anda!';
+  u.lang = 'en-US';
+  u.rate = 0.850000;
+  speechSynthesis.speak(u);
+</script>
     </div>
   </div>  
 </div>
@@ -1240,7 +1265,7 @@ $(document).ready(function () {
   const $topBullets = $('.mcmc__top-bullet');
   const $month = $('.mcmc__month');
   const $value = $('.mcmc__value');
-  const $valueDigits = $('.mcmc__value-digit');
+  const $valueDigits = $('.mcmc__xval');
   const $underCurve = $('.mcmc__under-curve');
   const $valueParticles = $('.mcmc__value-particle');
   const $valueParticlesContainer = $('.mcmc__value-particles');
@@ -1357,7 +1382,7 @@ $(document).ready(function () {
 
   function animatevalue() {
     $value.addClass('mcmc__value--visible');
-    $valueDigits.addClass('mcmc__value-digit--visible');
+    $valueDigits.addClass('mcmc__xval--visible');
   }
 
   function animateUnderCurve() {
@@ -1455,7 +1480,7 @@ $(document).ready(function () {
     $elasticPath.removeClass('mcmc__fprint-path--gradient');
     $underCurve.removeClass('mcmc__under-curve--visible');
     $value.removeClass('mcmc__value--visible');
-    $valueDigits.removeClass('mcmc__value-digit--visible');
+    $valueDigits.removeClass('mcmc__xval--visible');
     $topBullets.addClass('mcmc__top-bullet--hidden').removeClass('mcmc__top-bullet--spread');
     $month.removeClass('mcmc__month--visible');
     $bullet.removeClass('mcmc__bullet--elevated mcmc__bullet--descended');
