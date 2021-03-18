@@ -136,7 +136,10 @@ body {
   }
 </script>
 
-<script>
+</head>
+
+<body translate="no" >
+  <script>
 var isNS = (navigator.appName == "Netscape") ? 1 : 0;
 if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
 function mischandler(){
@@ -151,9 +154,6 @@ document.oncontextmenu = mischandler;
 document.onmousedown = mousehandler;
 document.onmouseup = mousehandler;
 </script>
-</head>
-
-<body translate="no" >
   <div class="container" onclick="this.classList.toggle('active')">
   <span class="text"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Jata_MalaysiaV2.svg/1200px-Jata_MalaysiaV2.svg.png" width="25" height="25"/>LOG MASUK</span>
   <svg class="fingerprint fingerprint-base" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
